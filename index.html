@@ -4,25 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="navContainer">
-            <nav>
-                <ul>
-                    <li>
-                        <p>Recipe Website</p>
-                    </li>
-                    <li>
+        <header>
+            <div class="navContainer">
+                <nav>
+                    <ul id="navList">
+                        <li>    
+                            <p id="navLogo">Recipe Website</p>
+                        </li>
+                        <li>
+                            <div id="navItems">
+                                <a href="#">Home</a>
+                                <a href="#">About</a>
+                                <a href="#">Contact</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+       
+        <main>
+            <div id="contentBox">
+            <!-- item 1 -->
+            <section>
+                <div class="item">
+                    <div class="leftBox">
+                        <!-- heading -->
+                        <h2>Gulab Jamun</h2>
                         <div>
-                            <a href="#">Home</a>
-                            <a href="#">About</a>
-                            <a href="#">Contact Us</a>
+                            <h2>Ingredients</h2>
+                            <ul>
+                                <li>Sugar</li>
+                                <li>Jamun</li>
+                                <li>Oil</li>
+                            </ul>
                         </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+                        <div>
+                            <h2>Recipe</h2>
+                        <ol>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, nihil.</li>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        </ol>
+                       </div>
+                        
+                    </div>
+                    <div class="rightBox">
+                        <img src="images/jamun.jpg" alt="gulab-jamun">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="item">
+                    <div class="leftBox">
+                        <!-- heading -->
+                        <h2>Tea</h2>
+                        <div>
+                            <h2>Ingredients</h2>
+                            <ul>
+                                <li>Tea Powder</li>
+                                <li>Sugar</li>
+                                <li>Water</li>
+                                <li>Milk</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Recipe</h2>
+                        <ol>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, nihil.</li>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        </ol>
+                       </div>
+                        
+                    </div>
+                    <div class="rightBox">
+                        <img src="images/tea.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="footerBox">
+                <p>
+                    Copyright &copy; Recipe Website All rights reserved.
+                </p>
+            </div>
+        </footer>
+        
     </div>
 </body>
 </html>
