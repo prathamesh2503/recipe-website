@@ -36,7 +36,7 @@ nav{
     list-style: none;
     font-size: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -71,12 +71,14 @@ a{
     font-size: 1.6rem;
 }
 #contentBox{
-    width: 70%;
+    width: 50%;
     margin: auto;
-    border: solid black;
+    /* border: solid black; */
     display: flex;
     flex-direction: column;
     gap: 80px;
+    padding: 3rem;
+    box-shadow: 0px 0px 30px black;
 }
 .item{
     display: flex;
@@ -84,9 +86,19 @@ a{
     align-items: center;
 }
 
+.rightBox{
+    position: relative;
+    /* overflow: hidden; */
+    transition: all 0.3s linear 0s;
+}
+
 .rightBox img{
     border: 1px solid black;
     border-radius: 20px;
+    transition: all 0.6s linear 0s;
+}
+.rightBox:hover{
+    transform: scale(1.1);
 }
 
 .leftBox{
@@ -97,4 +109,34 @@ a{
 
 .leftBox h2{
     font-size: 2rem;
+}
+.ingBox{
+    font-size: 1.5rem;
+}
+.recipeBox{
+    font-size: 1.1rem;
+}
+
+.rightBox .overlay{
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width:100%;
+background-color: rgba(67, 63, 63, 0.597);
+border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+opacity: 0;
+transition: all 0.6s linear 0s;
+}
+
+.rightBox:hover .overlay{
+opacity: 1;
+}
+
+.rightBox .overlay span{
+    color: white;
+    font-size: 1.2 rem;
 }
